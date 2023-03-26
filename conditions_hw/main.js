@@ -11,16 +11,19 @@ let result = a- b
 if(result){
     alert(result)
 }
+// result && alert(result)
 
 // Задание 3
 
 let question = prompt('Какое «официальное» название JavaScript?')
-if (question == 'ECMAScript'){
+if (question === 'ECMAScript'){
     alert('Верно!')
 } 
 else{
     alert('Не знаете? ECMAScript!')
 }
+
+
 
 // Задание 4
 
@@ -47,7 +50,7 @@ else{
 // Задание 6
 
 let str = 'Javascript'
- str
+ str ==='Javascript'
     ? console.log("Fronted")
     : console.log("Backend")
 
@@ -55,7 +58,7 @@ let str = 'Javascript'
 
 // Задание 1
 
-let z = prompt('Введите число ')
+let z = +prompt('Введите число ')
 // if(z>=9 && z<=11){
 //     alert("Осень")
 // }
@@ -69,19 +72,19 @@ let z = prompt('Введите число ')
 //     alert("Лето")
 // }
 // else{
-//     alert('Введите число от 1 до 12')
+//     alert('Нету такого месяца')
 // }
 switch(z){
-    case '1': {
+    case 1: {
         alert( "Осень")
     } break;
-    case '2': {
+    case 2: {
         alert( "Зима")
     } break;
-    case '3': {
+    case 3: {
         alert( "Весна")
     } break;
-    case '4': {
+    case 4: {
         alert( "Лето")
     } break;
     default: {
@@ -89,7 +92,7 @@ switch(z){
     }
 }
 
-// // Задание 2
+// Задание 2
 
 let name = prompt("Как тебя зовут?")
 if(name){
@@ -101,6 +104,18 @@ else{
     alert("Вы отменили действие")
     
 }
+// if(name){
+//     alert("Вы отменили действие")
+// }
+// else{
+//     const confirmed = confirm("Вы уверены?")
+//     if(confirmed){
+//         alert(`Ваше имя - ${name}"`)
+//     }
+//     else{
+//         alert("Попробуйте вспомнить")
+//     }
+// }
 
 // Задача 3
 
