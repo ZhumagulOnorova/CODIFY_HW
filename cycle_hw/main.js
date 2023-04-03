@@ -61,16 +61,22 @@ for(let elem of arr4){
 //? 10
 
 let arr5=[1,2,3,4,5,6,7,8,9]
-let mas = []
-for(let i=0; i<arr5.length; i++){
-   mas.push('-'+ arr5[i])
-}
-console.log(mas.join(''))
+// let mas = []
+// for(let i=0; i<arr5.length; i++){
+//    mas.push('-'+ arr5[i])
+// }
+// console.log(mas.join(''))
 
+let str2=''
+for (let elem of arr5){
+    str2+= '-'+ elem
+}
+console.log(str)
 
 //? *
 let str = '#'
-for( let i =0;i<6;i++){
+for( let i =1;i<6;i++){
     console.log(str)
     str=str +'#'
 }
+
