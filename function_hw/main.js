@@ -51,7 +51,7 @@
 //     let sum=0
 //     for(let elem of arr){
 //         if(elem % 3 ===0){
-//             sum+= elem    
+//             sum+= elem     
 //         }
 //     } return sum
 // }
@@ -116,6 +116,32 @@
 // console.log(kvArray);
 //! Задание 10
 //?Напишите функцию, которая принимает массив объектов и возвращает новый массив, содержащий только те объекты, у которых значение свойства "completed" равно true.
+const arr =[
+    {
+        task:'Go to school!',
+        isCompleted: true
+    },
+    {
+        task:'Buy milk',
+        isCompleted: false
+    },
+    {
+        task:'Home wark',
+        isCompleted: true
+    }
+]
+
+const fn=(arr)=>{
+    const returnedArr=[]
+    for(let i=0;i<arr.length;i++){
+        if(arr[i].isCompleted){
+            returnedArr.push(arr[i])
+        }
+    } return returnedArr
+}
+
+console.log(fn=(arr));
+console.log(arr.filter(elem=>elem.isCompleted));
 
 //! Задание 11
 //?Создайте функцию, которая принимает две строки и возвращает true, если они являются анаграммами (т.е. содержат одни и те же буквы в разном порядке), и false в противном случае.
