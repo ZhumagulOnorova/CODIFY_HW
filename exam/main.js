@@ -78,9 +78,12 @@
 // Напишите функцию, которая принимает два массива объектов и возвращает новый массив, в котором объединены объекты обоих массивов, и если у двух объектов одинаковые свойства, то они объединяются в один объект.
 
 let fn=(arr1, arr2)=>{
-    let entriesedArr = Object.entries(arr1)
-    let entriesedArr2 = Object.entries(arr2)
-    return [ 'age' in arr1 , 'age' in arr2]
+    const concattedArr=arr1.concat(arr2)
+    
+    return concattedArr
+    // let entriesedArr = Object.entries(arr1)
+    // let entriesedArr2 = Object.entries(arr2)
+    // return [ 'age' in arr1 , 'age' in arr2]
 }
 
 let arr1 =[
@@ -95,7 +98,7 @@ let arr1 =[
 ]
 let arr2 =[
     {
-        name:'Chloe',
+        name:'Zhaz',
         age:18
     },
     {
@@ -103,6 +106,7 @@ let arr2 =[
         year: 1998
     }
 ]
+const result=fn(arr1, arr2)
 console.log(arr1,arr2);
 //Задание 10
 // Напишите функцию, которая принимает массив чисел и возвращает новый массив, в котором элементы сгруппированы по заданному условию, например, все четные числа в одном массиве, а нечетные в другом.
